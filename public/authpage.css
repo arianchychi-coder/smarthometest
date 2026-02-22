@@ -1,0 +1,211 @@
+:root{
+    --green:#7CCF35;
+    --white:#f1f1f1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+header .logo{
+    margin-top: 2rem;
+    color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+header .navbar .content{
+    color: #333;
+    padding: 0 1.5rem;
+    font-size: 2.5rem;
+    position: relative;
+    left: 83rem;
+    width: 49rem;
+    height: 3px;
+    background-color: #7CCF35;
+    top: 6rem;
+}
+
+
+header i{
+    color: #7CCF35;
+    font-size: 50px;
+    position: relative;
+    left: 135rem;
+    top: .5rem;
+}
+
+
+
+
+.authoption{
+    position: relative;
+    top: 12rem;
+    height: 32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.authoption :hover{
+    transform: scale(1.03);
+    transition: 2ms linear;
+    border: .1rem solid #7CCF35;
+}
+
+.authoption .option{
+    margin-top: -12rem;
+    width: 23rem;
+    height: 20rem;
+        border-radius: 1rem;
+        align-items: center;
+        padding: 2.8rem 2rem;
+        text-align: center;
+        justify-content: center;
+    background: var(--white);
+}
+
+
+.authoption .option i{
+    font-size: 7rem;
+    color: var(--green);
+    border: transparent;
+}
+
+
+.authoption .option h3{
+    border: transparent;
+    color: #333;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* لپتاپ کوچکتر */
+@media (max-width:1200px){
+
+    header .navbar .content{
+        left: 60rem;
+        width: 35rem;
+    }
+
+    header i{
+        left: 100rem;
+    }
+
+}
+
+
+/* تبلت */
+@media (max-width:992px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header .navbar .content{
+        left: 0;
+        width: 100%;
+        top: 8rem;
+    }
+
+    header i{
+        position: absolute;
+        right: 3rem;
+        left: auto;
+    }
+
+    .authoption{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .authoption .option{
+        margin-top: 0;
+    }
+
+}
+
+
+/* موبایل */
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header .logo{
+        position: absolute;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    header .navbar .content{
+        display: none;
+        width: 100%;
+        height: 2px;
+        top: 10rem;
+    }
+
+    header i{
+        position: absolute;
+        top: 7rem;
+        right: 8rem;
+        font-size: 5rem;
+    }
+
+    .authoption{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .authoption .option{
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+
+/* موبایل کوچک */
+@media (max-width:450px){
+
+    html{
+        font-size: 45%;
+    }
+
+}

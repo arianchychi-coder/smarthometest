@@ -1,0 +1,73 @@
+:root{
+    --green:#7CCF35;
+    --white:#f1f1f1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+section{
+    padding: 2rem 9%;
+    height: 100vh;
+}
+
+.burgleralarm{
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        gap: 2rem;
+        background: var(--white);
+}
+
+.burgleralarm .container{
+    background: transparent ;
+    border: .1rem solid #7CCF35;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    border-radius: 3rem;
+    height: 50vh;
+    max-width: 30rem;
+    padding: 7.5rem 4%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.burgleralarm .container:hover{
+    transform: scale(1.03);
+    transition: 2ms linear;
+}
+
+
+.burgleralarm .container h3{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+
+.burgleralarm .container i{
+    font-size: 9rem;
+    color: var(--green);
+}
